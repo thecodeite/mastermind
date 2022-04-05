@@ -1,5 +1,3 @@
-import { cp } from "fs"
-
 export type Guess = string[]
 interface Score {
   black: number

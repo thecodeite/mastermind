@@ -17,7 +17,7 @@
 .Circle {
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 50%;
   margin: 8px;
 
 
@@ -25,43 +25,51 @@
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
+  color: black;
 
   &.empty {
-    box-shadow:         inset 0 0 10px #000000;
+    box-shadow: inset 3px 3px 2px grey;
     background-color: lightgray;
     border: 1px solid transparent;
   }
 
   &.red {
-    background-color: red;
-    border: 1px solid black;
+    background: red;
+    background: radial-gradient(circle at 33% 33%, red, #440000);
   }
 
   &.green {
-    background-color: green;
+    background: #27a527;
+    background: radial-gradient(circle at 33% 33%, #27a527, #0f3f0f);
     color: white;
   }
 
   &.blue {
-    background-color: blue;
+    background: #4444ff;
+    background: radial-gradient(circle at 33% 33%, #4444ff, #171759);
     color: white;
     
   }
 
   &.yellow {
-    background-color: yellow;
-    border: 1px solid black;
-  }
-
-  &.white {
-    background-color: white;
+    background: #ffff00;
+    background: radial-gradient(circle at 33% 33%, #ffff00, #5b5b00);
     border: 1px solid black;
   }
 
   &.black {
-    background-color: black;
+    background: #000000;
+    background: radial-gradient(circle at 33% 33%, #666666, #000000);
     color: white;
   }
+
+  &.white {
+    background: #ffffff;
+    background: radial-gradient(circle at 33% 33%, #ffffff, #565656);
+    border: 1px solid black;
+  }
+
+  
 }
 
 .Score {
@@ -80,15 +88,21 @@
     background-color: transparent;
 
     background-color: lightgrey;
+
+    box-shadow: inset 1px 1px 1px grey;
    
     &.b {
-      border: 1px solid black;
+      border: 0.5px solid black;
+      background: radial-gradient(circle at 33% 33%, #666666, #000000);
       background-color: black;
+      box-shadow: none;
     }
 
     &.w {
-      border: 1px solid black;
-      background-color: white;
+      border: 0.5px solid black;
+      background: white;
+      background: radial-gradient(circle at 33% 33%, #ffffff, #565656);
+      box-shadow: none;
     }
   }
 }
