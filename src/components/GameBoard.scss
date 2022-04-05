@@ -1,0 +1,23 @@
+.GameBoard {
+  h1 {
+    width:280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin-left: 8px;
+      border: 1px solid black;
+      color: black;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.GameWon {
+  width:280px;
+  text-align: center;
+}
